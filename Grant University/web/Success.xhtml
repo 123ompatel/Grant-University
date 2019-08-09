@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <title>Success Page</title>
+    </h:head>
+    <h:body>
+
+        <table border="0" bgcolor="#808080" align="top" width="100%" style=" height: 100px">
+
+            <tr>
+                <td bgcolor="666699" align="center">
+                    <p style="font-size: 38pt" color="#ffffff" font-family="Arial Rounded MT Bold  ">GRANT UNIVERSITY</p>
+                </td> 
+                <td bgcolor="666699" align="left" width="180">
+                    <img alt="" src="accountant3.jpeg" width="180" height="160" align="right"></img>
+                </td>
+            </tr>
+        </table>
+        <h2>
+            Welcome &nbsp;
+            <h:outputText id="o1" value="#{registratrationForm.firstName}"/>&nbsp;
+            <h:outputText id="o2" value="#{registratrationForm.lastName}"/>&nbsp;
+        </h2>
+        <h2>
+            You have successfully registered with our website.<br/>
+            Your User ID is :&nbsp;<h:outputText id="o3" value="#{registratrationForm.userID}"/>
+        </h2>
+        <table>
+            <tr>
+                <td align="center">
+                    <h:form>
+                        <h:commandButton value="Home" action="index"/>
+                    </h:form>
+                    
+                </td>
+            </tr>
+        </table>
+
+    </h:body>
+</html>
+
